@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="media-queries.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Mono:300,400,700&display=swap" rel="stylesheet">
+
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="navbar">
+                <a class="brand-logo" href="">TCRodriguez</a>
+                <ul class="nav-items">
+                    <li>
+                        <a href="#projects">Web Development</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#">Side Projects/Explorations</a>
+                    </li>
+                    <li>
+                        <a href="#">Writing</a>
+                    </li> -->
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="welcome-section">
+        <div class="billboard">
+            <!-- <img src="Me.jpg" alt="Profile pic" id="profile-pic"> -->
+            <!-- Change the period after my name to a typewriter line "|" that blinks that a word processor...-1/28/20 -->
+            <h1 id="myname">Hello, my name is Tonatiuh.</h1>
+            <p id="subheadline">I'm a developer and writer.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Web Dev Work I've Done</h2>
+        <div class="cards">
+            <div class="project-tile card1">
+                <span class="LEAT-in-progress-badge"><em>In Progress...</em></span>
+                <h4>Questionnaire Web App</h4>
+                <p>
+                    Research questionnaire web application for University of Oregon's Early Dual Language Development Lab.  
+                    <span class="badge">PostgreSQL</span>
+                    <span class="badge">Express</span>
+                    <span class="badge">Node.js</span>
+                    <span class="badge">HTML</span> 
+                    <span class="badge">CSS</span> 
+                    <span class="badge">JS</span>
+                </p>
+                <!-- <a href="" target="_blank"><ion-icon name="logo-codepen"></ion-icon></a>
+                <a href="" target="_blank"><ion-icon name="logo-github"></ion-icon></a> -->
+            </div>
+            <div class="project-tile card2">
+                <img class="cardpic" src="https://dl.dropbox.com/s/zhmpnlutweeivot/Screen%20Shot%202020-04-14%20at%204.47.06%20PM.png?" alt="">
+                <h4>Product Landing Page</h4>
+                <p>Landing page for the Sega Dreamcast. <span class="badge">HTML</span> <span class="badge">CSS</span></p>
+                <a href="https://codepen.io/TRodriguez/full/jObbWmR" target="_blank"><ion-icon name="logo-codepen"></ion-icon></a>
+                <a href="https://github.com/TCRodriguez/dreamcast-landing-page" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+            </div>
+            <div class="project-tile card3">
+                <span class="portfolio-this-badge">this</span>
+                <h4>Developer Portfolio Site</h4>
+                <p>Personal portfolio website to showcase my work. <span class="badge">HTML</span> <span class="badge">CSS</span></p>
+                <a href="https://codepen.io/TRodriguez/full/jObbWmR" target="_blank"><ion-icon name="logo-codepen"></ion-icon></a>
+                <a href="https://github.com/TCRodriguez/dreamcast-landing-page" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+            </div>
+            <div class="project-tile card4" id="nujabes">
+                <img class="cardpic" src="https://dl.dropbox.com/s/6l11z7o1n6tqf1q/Screen%20Shot%202020-04-19%20at%2012.16.51%20PM.png?" alt="">
+                <h4>Nujabes Tribute Page</h4>
+                <p>A timeline tribute project for the late Jun Seba. <span class="badge">HTML</span> <span class="badge">CSS</span></p>
+                <a href="https://codepen.io/TRodriguez/full/abOKrNN" target="_blank"><ion-icon name="logo-codepen"></ion-icon></a>
+                <a href="https://github.com/TCRodriguez/nujabes_tribute_page" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+            </div>
+            <div class="project-tile card5">
+                <img class="cardpic" src="https://dl.dropbox.com/s/u7c0t8l2n84486d/Screen%20Shot%202020-04-14%20at%204.40.34%20PM.png?" alt="">
+                <h4>Survey Form</h4>
+                <p>A form to capture prospective client information related to business pain points. <span class="badge">HTML</span> <span class="badge">CSS</span></p>
+                <a href="https://codepen.io/TRodriguez/full/NWqomeQ" target="_blank"><ion-icon name="logo-codepen"></ion-icon></a>
+                <a href="https://github.com/TCRodriguez/survey-form-project" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+            </div>
+            <div class="project-tile card6">
+                <img class="cardpic" src="https://dl.dropbox.com/s/xlcn1klvgg9iee4/Home-page%20copy.png?" alt="">
+                <h4><a href="https://codepen.io/TRodriguez/pen/dyPxzrg">Brazenly Construction LLC</a></h4>
+                <p>Website redesign for a local construction company. I changed the name to retain confidentiality. <span class="badge">HTML</span> <span class="badge">CSS</span></p>
+                <a href="https://codepen.io/TRodriguez/full/bGdVJMR" target="_blank"><ion-icon name="logo-codepen"></ion-icon></a>
+                <a href="https://github.com/TCRodriguez/brazenly-construction" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Want to reach me?</h2>
+        <div id="contact-links">
+            <div id="contact-email">
+                <p>tonatiuh<a href="mailto:"><span>@</span></a>tcrodriguez.com</p>
+            </div>
+            <div class="responsive-center">
+                <a href="https://github.com/TCRodriguez" target="_blank" id="profile-link"><ion-icon name="logo-github"></ion-icon></a>
+            </div>
+            <div class="responsive-center">
+                <a href="https://codepen.io/TRodriguez" target="_blank"><ion-icon name="logo-codepen"></ion-icon></a>
+            </div>
+            <div class="responsive-center">
+                <a href="https://twitter.com/Coded_Sun" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+            </div>
+        </div>
+
+        
+        
+    </section>
+
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="scripts.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+        crossorigin="anonymous">
+    </script>
+</body>
+</html>

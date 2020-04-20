@@ -1,0 +1,104 @@
+@media screen and (max-width: 991px) {
+    .billboard {
+        margin: 15% 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #projects h2 {
+        font-size: 2.5rem;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "Card1 Card2"
+            "Card3 Card4"
+            "Card5 Card6"
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .billboard {
+        margin: 35% 0;
+    }
+    
+    #projects h2 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    
+    
+    .cards {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "Card1"
+            "Card2"
+            "Card3"
+            "Card4"
+            "Card5"
+            "Card6"
+    }
+
+    #contact h2 {
+        font-size: 3rem;
+        padding: 0 1.5%;
+        line-height: 3rem;
+        margin-bottom: 10%;
+    }
+
+    #contact div {
+        flex-direction: column;
+    }
+
+    #contact-email {
+        margin-left: 31%;
+    }
+
+    .responsive-center {
+        margin-left: 46.75%
+    }
+}
+
+@media screen and (max-width: 414px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .nav-items {
+        margin-left: 18%;
+    }
+
+    #contact-email {
+        margin-left: 28.75%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .nav-items {
+        margin-left: 8%;
+    }
+
+    #projects h2 {
+        font-size: 2rem;
+        -webkit-text-stroke: 1.25px #f7e032;
+    }
+
+    #contact h2 {
+        font-size: 2.5rem;
+        -webkit-text-stroke: 1.25px black;
+
+    }
+
+    #contact-email {
+        margin-left: 29.5%;
+    }
+
+    #contact-email p {
+        font-size: .75rem;
+    }
+}

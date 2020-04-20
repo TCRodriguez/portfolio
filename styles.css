@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    font-family: 'Roboto Mono', monospace;
+    color: black;
+    font-size: 20px;
+    /* letter-spacing: 1px; */
+    line-height: 1.75rem;
+    background-color: #f7e032;
+}
+
+section {
+    padding: 40px 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+nav {
+    position: fixed;
+    background: #f7e032;
+    width: 100%;
+    z-index: 9999;
+    /* opacity: 0.5; */
+}
+
+ion-icon:hover {
+    color: #a33ebb;
+}
+
+.brand-logo {
+    justify-self: start;
+    align-self: center;
+    text-decoration: none;
+    color: black;
+    font-size: 1.25em;
+}
+
+
+#navbar {
+    display: grid;
+    justify-content: end;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 100%;
+    padding: 8px 16px;
+
+}
+.nav-items {
+    list-style: none;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.nav-items li {
+    float: left;
+    padding: 8px;
+    font-size: .8em;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-items li a:link,
+.nav-items li a:visited {
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.nav-items li a:hover,
+.nav-items li a:active {
+    border-bottom: 2px solid #a33ebb;
+}
+
+/* Reusable Pieces */
+
+.badge {
+    background: black;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: .5rem;
+    color: #f7e032;
+}
+
+
+.billboard {
+    padding: 80px 0;
+    margin: 15% 10%;
+    font-size: 1.25em;
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        ". header ."
+        ". middle ."
+        ". footer .";
+}
+
+
+
+#profile-pic {
+    border: 1px solid #dee2e6;
+    padding: .25rem;
+    grid-area: header;
+    justify-self: center;
+}
+
+img {
+    /* width: 10rem; */
+    max-width: 100%;
+}
+
+#myname {
+    grid-area: middle;
+    justify-self: left;
+}
+
+#subheadline {
+    font-weight: 300;
+    grid-area: footer;
+    justify-self: left;
+}
+
+section h2 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+#welcome-section {
+    height: 100vh;
+}
+
+/* ---------- Projects section! ---------- */
+
+
+
+
+#projects {
+    background-color: #333;
+    color: white;
+}
+
+#projects h2 {
+    font-size: 3rem;
+    color: #333;
+    -webkit-text-stroke: 2.5px #f7e032;
+    margin: 8% 0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "Card1 Card2 Card3"
+        "Card4 Card5 Card6";
+
+}
+
+.project-tile {
+    transition: 0.3s;
+    background-color: #f7e032;
+    padding: 5%;
+    margin: 5%;
+    border: 2px solid #f7e032;
+    border-radius: 5px;
+    color: black;
+}
+
+.project-tile a {
+    text-decoration: none;
+    color: black;
+}
+
+.project-tile:hover {
+    transform: scale(1.05)
+}
+
+.project-tile h4 {
+    margin-top: 4%;
+    font-size: 1.5rem;
+}
+
+.project-tile ion-icon {
+    margin-top: 5%;
+    font-size: 2rem;
+    z-index: 1;
+}
+
+.cardpic {
+    width: 100%;
+}
+
+.card1 {
+    grid-area: Card1;
+}
+
+.card2 {
+    grid-area: Card2;
+}
+
+.card3 {
+    grid-area: Card3;
+}
+
+.card4 {
+    grid-area: Card4;
+}
+
+.card5 {
+    grid-area: Card5;
+}
+
+.card6 {
+    grid-area: Card6;
+}
+
+
+.portfolio-this-badge {
+    display: flex;
+    text-align: center;
+    background: black;
+    color: #f7e032;
+    justify-content: center;
+    padding: 21%;
+    font-size: 3rem;
+}
+
+.LEAT-in-progress-badge {
+    display: flex;
+    /* Creates the stripes */
+    background: repeating-linear-gradient(
+        -55deg,
+        #222,
+        #222 10px,
+        #f7e032 10px,
+        #f7e032 30px
+    );
+    color: #f7e032;
+    justify-content: center;
+    padding: 65px;
+
+}
+
+.LEAT-in-progress-badge em {
+    background: black;
+}
+
+
+/* ---------- Contact section! ---------- */
+
+
+
+#contact div {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 0;
+    margin-right: 5%;
+}
+
+#contact h2 {
+    font-size: 3rem;
+    margin-bottom: 3%;
+    color: #f7e032;
+    -webkit-text-stroke: 2.5px black;
+}
+
+#contact span {
+    font-size: 2.5rem;
+}
+
+#contact span:hover {
+    color: #a33ebb;
+}
+
+#contact ion-icon {
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+#contact-links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#contact-email {
+    margin-left: 5%;
+    margin-bottom: 1%;
+}
+
+
