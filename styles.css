@@ -188,9 +188,9 @@ section h2 {
     color: black;
 }
 
-/* .project-tile:hover {
+.project-tile:hover {
     transform: scale(1.05)
-} */
+}
 
 .project-tile h4 {
     margin-top: 4%;

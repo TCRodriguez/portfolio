@@ -9,6 +9,11 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Mono:300,400,700&display=swap" rel="stylesheet">
 
     <title>Portfolio Website</title>
+    <script
+        src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+        crossorigin="anonymous">
+    </script>
 </head>
 <body>
     <header>
@@ -36,7 +41,7 @@
     <section id="projects">
         <h2>Web Dev Work I've Done</h2>
         <div class="cards">
-            <div class="project-tile card1">
+            <div class="project-tile card1" id="LEAT-project">
                 <span class="LEAT-in-progress-badge"><em>In Progress...</em></span>
                 <h4>Questionnaire Web App</h4>
                 <p>
@@ -49,35 +54,39 @@
                     <span class="badge">JS</span>
                 </p>
             </div>
-            <div class="project-tile card2">
+            <div class="project-tile card2" id="landing-page-project">
                 <img class="cardpic" src="https://dl.dropbox.com/s/zhmpnlutweeivot/Screen%20Shot%202020-04-14%20at%204.47.06%20PM.png?" alt="Screenshot of product landing page">
                 <h4>Product Landing Page</h4>
                 <p>Landing page for the Sega Dreamcast. <span class="badge">HTML</span> <span class="badge">CSS</span></p>
                 <a href="https://codepen.io/TRodriguez/full/jObbWmR" target="_blank"><ion-icon name="logo-codepen"></ion-icon></a>
                 <a href="https://github.com/TCRodriguez/dreamcast-landing-page" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
             </div>
-            <div class="project-tile card3">
+            <div class="project-tile card3" id="portfolio-project">
                 <span class="portfolio-this-badge">this</span>
                 <h4>Developer Portfolio Site</h4>
-                <p>Personal portfolio website to showcase my work. <span class="badge">HTML</span> <span class="badge">CSS</span></p>
+                <p>Personal portfolio website to showcase my work.
+                    <span class="badge">jQuery</span> 
+                    <span class="badge">HTML</span> 
+                    <span class="badge">CSS</span>
+                </p>
                 <a href="https://codepen.io/TRodriguez/full/mderzeR" target="_blank"><ion-icon name="logo-codepen"></ion-icon></a>
                 <a href="https://github.com/TCRodriguez/portfolio" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
             </div>
-            <div class="project-tile card4" id="nujabes">
+            <div class="project-tile card4" id="tribute-project">
                 <img class="cardpic" src="https://dl.dropbox.com/s/6l11z7o1n6tqf1q/Screen%20Shot%202020-04-19%20at%2012.16.51%20PM.png?" alt="Screenshot of tribute page project">
                 <h4>Nujabes Tribute Page</h4>
                 <p>A timeline tribute project for the late Jun Seba. <span class="badge">HTML</span> <span class="badge">CSS</span></p>
                 <a href="https://codepen.io/TRodriguez/full/abOKrNN" target="_blank"><ion-icon name="logo-codepen"></ion-icon></a>
                 <a href="https://github.com/TCRodriguez/nujabes_tribute_page" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
             </div>
-            <div class="project-tile card5">
+            <div class="project-tile card5" id="survey-form-project">
                 <img class="cardpic" src="https://dl.dropbox.com/s/u7c0t8l2n84486d/Screen%20Shot%202020-04-14%20at%204.40.34%20PM.png?" alt="Screenshot of survey form web page">
                 <h4>Survey Form</h4>
                 <p>A form to capture prospective client information related to business pain points. <span class="badge">HTML</span> <span class="badge">CSS</span></p>
                 <a href="https://codepen.io/TRodriguez/full/NWqomeQ" target="_blank"><ion-icon name="logo-codepen"></ion-icon></a>
                 <a href="https://github.com/TCRodriguez/survey-form-project" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
             </div>
-            <div class="project-tile card6">
+            <div class="project-tile card6" id="construction-site-redesign">
                 <img class="cardpic" src="https://dl.dropbox.com/s/xlcn1klvgg9iee4/Home-page%20copy.png?" alt="Screenshot of construction company website redesign">
                 <h4><a href="https://codepen.io/TRodriguez/pen/dyPxzrg">Brazenly Construction LLC</a></h4>
                 <p>Website redesign for a local construction company. I changed the name to retain confidentiality. <span class="badge">HTML</span> <span class="badge">CSS</span></p>
@@ -105,10 +114,5 @@
     </section>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <script src="scripts.js"></script>
-    <script
-        src="https://code.jquery.com/jquery-3.5.0.min.js"
-        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
-        crossorigin="anonymous">
-    </script>
 </body>
 </html>
