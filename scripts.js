@@ -4,6 +4,10 @@
     // =====================================
 // jQuery for 'projects' section 
 // =====================================
+$("#technical-documentation-page").click(function() {
+    window.open("https://codepen.io/TRodriguez/full/oNjyqJY", '_blank');
+});
+
 
 $("#landing-page-project").click(function() {
     window.open("https://codepen.io/TRodriguez/full/jObbWmR", '_blank');
