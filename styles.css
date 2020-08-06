@@ -169,7 +169,8 @@ section h2 {
     grid-template-rows: auto;
     grid-template-areas: 
         "Card1 Card2 Card3"
-        "Card4 Card5 Card6";
+        "Card4 Card5 Card6"
+        "Card7 Card8 Card9";
 
 }
 
@@ -188,9 +189,14 @@ section h2 {
     color: black;
 }
 
-.project-tile:hover {
+/* Found an issue where the jQuery selectors override the buttons on the cards
+so that everything links to the CodePen for each project...the GitHub
+icon isn't linking to the GitHub page  */
+/* I've turned this 'hover' feature off as it misleads the user to think that
+since on mouse hover the card expands that means that it is a 'clickable' element */
+/* .project-tile:hover {
     transform: scale(1.05)
-}
+} */
 
 .project-tile h4 {
     margin-top: 4%;
@@ -230,6 +236,19 @@ section h2 {
 .card6 {
     grid-area: Card6;
 }
+
+.card7 {
+    grid-area: Card7;
+}
+
+.card8 {
+    grid-area: Card8;
+}
+
+.card9 {
+    grid-area: Card9;
+}
+
 
 
 .portfolio-this-badge {
