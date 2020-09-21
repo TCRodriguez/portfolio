@@ -170,7 +170,9 @@ section h2 {
     grid-template-areas: 
         "Card1 Card2 Card3"
         "Card4 Card5 Card6"
-        "Card7 Card8 Card9";
+        "Card7 Card8 Card9"
+        "Card10 Card11 Card12"
+        "Card13 Card14 Card15";
 
 }
 
@@ -247,6 +249,30 @@ since on mouse hover the card expands that means that it is a 'clickable' elemen
 
 .card9 {
     grid-area: Card9;
+}
+
+.card10 {
+    grid-area: Card10;
+}
+
+.card11 {
+    grid-area: Card11;
+}
+
+.card12 {
+    grid-area: Card12;
+}
+
+.card13 {
+    grid-area: Card13;
+}
+
+.card14 {
+    grid-area: Card14;
+}
+
+.card15 {
+    grid-area: Card15;
 }
 
 
